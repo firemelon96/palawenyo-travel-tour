@@ -23,9 +23,10 @@ const schema = z.object({
 interface FormWithZODProps {
   duration: string;
   price?: number;
+  name: string;
 }
 
-const FormWithZOD = ({ duration, price }: FormWithZODProps) => {
+const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
   const durationNum = Number(duration.split(" ")[0]) - 1;
   const router = useRouter();
 
@@ -49,8 +50,9 @@ const FormWithZOD = ({ duration, price }: FormWithZODProps) => {
   const onSubmit = (data: FieldValues) => {
     // console.log(data);
     const { date, count, travellerType, notes } = data;
+
     router.push(
-      `https://m.me/107338648650143?text=Booking%20from%20WebApp%0ATour%20name:%20Balabac%20Tour%0ADate:%20${format(new Date(date), "MMMM dd")}%0AParticipants:%20${count}x%0ATraveller%20Type:%20${travellerType}%0ANotes:%20${notes}%0ATotal%20Price:%20${totalPrice}`,
+      `https://m.me/107338648650143?text=Booking%20from%20WebApp%0ATour%20name:%20${name}%0ADate:%20${format(new Date(date), "MMMM dd")}%0AParticipants:%20${count}x%0ATraveller%20Type:%20${travellerType}%0ANotes:%20${notes}%0ATotal%20Price:%20${totalPrice}`,
     );
   };
 

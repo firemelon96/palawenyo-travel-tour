@@ -63,7 +63,11 @@ const SingleTour = async ({ params }: Props) => {
               <h5 className="text-sky-500 text-xl">{tour.name}</h5>
               <p className="text-slate-500">{tour.address}</p>
 
-              <FormWithZOD price={tour.price} duration={tour.duration} />
+              <FormWithZOD
+                name={tour.name}
+                price={tour.price}
+                duration={tour.duration}
+              />
             </div>
             <ListBox items={tour.inclusions} type="Inclusion" />
             <ListBox items={tour.exclusions} type="Exclusion" />
