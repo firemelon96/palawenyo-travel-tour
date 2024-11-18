@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className="relative z-[9999]">
-      <div className="bg-sky-500 fixed left-0 top-0 z-10 h-20 w-full">
+      <div className="bg-sky-500 dark:bg-sky-800 fixed left-0 top-0 z-10 h-20 w-full">
         <div className="container mx-auto flex items-center justify-between xl:px-20">
           <div className="flex items-center">
             <Link href="/">

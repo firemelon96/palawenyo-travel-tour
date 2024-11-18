@@ -12,7 +12,7 @@ export const BigCard = ({ data }: Props) => {
   return (
     <Link
       href={`/tours/${data.id}`}
-      className="flex gap-4 rounded-md border p-4 odd:flex-row even:flex-row-reverse md:h-80 md:justify-between"
+      className="dark:bg-sky-500/10 dark:border-slate-600 flex gap-4 rounded-md border p-4 odd:flex-row even:flex-row-reverse md:h-80 md:justify-between"
     >
       <div className="w-1/2 overflow-hidden rounded-md">
         <Image
@@ -27,7 +27,7 @@ export const BigCard = ({ data }: Props) => {
         <h1 className="text-sky-600 text-xl md:text-3xl">{data.name}</h1>
         <p className="text-sky-400 text-lg md:text-2xl">
           {formatPeso(data.price)}{" "}
-          <span className="text-slate-500">- {data.duration}</span>
+          <span className="text-slate-500">- {data.duration} Tour</span>
         </p>
         <span className="text-slate-500">{data.description}</span>
 

@@ -185,7 +185,7 @@ const FormWithZOD = ({ duration, price }: FormWithZODProps) => {
       <button
         type="submit"
         disabled={isLoading}
-        className="text-white bg-sky-500 w-full rounded-full p-4 font-bold uppercase tracking-widest"
+        className="text-white bg-sky-500 dark:bg-sky-800 w-full rounded-full p-4 font-bold uppercase tracking-widest"
       >
         BOOK THIS TRIP
       </button>

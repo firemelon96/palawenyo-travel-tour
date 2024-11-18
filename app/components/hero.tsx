@@ -4,7 +4,7 @@ import { BiChevronRight } from "react-icons/bi";
 
 const Hero = () => {
   return (
-    <section className="bg-red-300 mt-20 flex w-full overflow-hidden">
+    <section className="bg-sky-800 mt-20 flex w-full overflow-hidden">
       <div className="relative h-[540px] w-full">
         <Image
           fill

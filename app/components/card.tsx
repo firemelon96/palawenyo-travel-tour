@@ -10,7 +10,7 @@ type Props = {
 const Card = ({ data }: Props) => {
   return (
     <Link href={`/tours/${data.id}`}>
-      <div className="flex w-fit flex-col gap-2 rounded-2xl bg-secondary p-4 shadow-sm hover:shadow-md sm:shadow-none">
+      <div className="bg-sky-50 dark:bg-sky-500/10 flex w-fit flex-col gap-2 rounded-2xl p-4 shadow-sm hover:shadow-md sm:shadow-none">
         <div className="h-48 w-60 overflow-hidden rounded-xl">
           <Image
             src={data.images[0]}

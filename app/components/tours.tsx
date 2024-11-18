@@ -13,7 +13,7 @@ const Tours = () => {
           <h3 className="text-sky-500 text-3xl font-semibold">
             Traveller&apos;s choice
           </h3>
-          <p className="text-sky-400 text-base">Explore coron adventure...</p>
+          <p className="text-sky-400 text-base">Explore Coron Adventure</p>
         </div>
 
         <div className="w-full space-y-4">

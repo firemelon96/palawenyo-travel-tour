@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-sky-500 text-sky-50">
+    <footer className="bg-sky-500 dark:bg-sky-800 text-sky-50">
       <div className="container mx-auto grid grid-cols-1 gap-4 py-20 text-center md:grid-cols-3 md:px-20 md:text-start">
         <div className="flex flex-col items-center gap-4 md:items-start">
           <div className="">
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           <div>
             <h6 className="text-3xl font-semibold">
-              Palawenyo travel and tours
+              Palawenyo Travel and Tours
             </h6>
             <p className="text-xl">Coron Palawan, Philippines</p>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center border-t border-secondary py-2 text-sm text-background">
         <p> &copy; Copyright 2024. All Rights Reserved.</p>
-        <span>Design and developed by: Almujahid Jamion</span>
+        <span>Palawenyo Travel and Tours</span>
       </div>
     </footer>
   );

@@ -8,7 +8,7 @@ import ReviewsMap from "./components/reviewsMap";
 
 export default function Home() {
   return (
-    <div className="bg-secondary">
+    <div className="bg-white dark:bg-slate-800">
       <Navbar />
       <Hero />
       {/* <FeaturedTour /> */}
