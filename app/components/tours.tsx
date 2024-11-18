@@ -11,7 +11,7 @@ const Tours = () => {
       <div className="flex flex-col items-center gap-4 md:items-start">
         <div>
           <h3 className="text-sky-500 text-3xl font-semibold">
-            Traveller's choice
+            Traveller&apos;s choice
           </h3>
           <p className="text-sky-400 text-base">Explore coron adventure...</p>
         </div>

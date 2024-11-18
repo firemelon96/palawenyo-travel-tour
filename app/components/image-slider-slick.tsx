@@ -30,8 +30,10 @@ const ImageSliderSlick = ({ images }: ImageProps) => {
     customPaging: function (i: number) {
       return (
         <a>
-          <img
+          <Image
             src={images[i]}
+            height={400}
+            width={400}
             alt={`image-${i + 1}`}
             className="h-20 w-20 cursor-pointer"
           />
