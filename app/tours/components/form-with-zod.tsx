@@ -92,7 +92,7 @@ const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
             selected={field.value}
             minDate={new Date()}
             placeholderText="Select a date for your trip"
-            className="border-gray-300 mt-1 block w-full rounded-md border border-third p-2 text-xl shadow-sm"
+            className="border-gray-300 text-slate-500 mt-1 block w-full rounded-md border border-third p-2 text-xl shadow-sm"
           />
         )}
       />

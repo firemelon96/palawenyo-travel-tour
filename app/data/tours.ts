@@ -1,7 +1,7 @@
 export const tours = [
   {
     id: "coron-tour-a-island-tour-a",
-    address: "coron palawan",
+    address: "Coron, Palawan",
     type: "day tour",
     name: "Coron Island Tour A",
     description:
@@ -70,7 +70,7 @@ export const tours = [
   },
   {
     id: "coron-island-tour-b",
-    address: "coron palawan",
+    address: "Coron, Palawan",
     type: "day tour",
     name: "Coron Island Tour B",
     description:
@@ -135,7 +135,7 @@ export const tours = [
   },
   {
     id: "coron-ultimate-tour",
-    address: "coron palawan",
+    address: "Coron, Palawan",
     type: "day tour",
     name: "Coron Tour C - Coron Ultimate Tour",
     description:
@@ -205,7 +205,7 @@ export const tours = [
   },
   {
     id: "coron-tour-d-reefs-and-wrecks",
-    address: "coron palawan",
+    address: "Coron, Palawan",
     type: "day tour",
     name: "Coron Tour D - Reefs and Wrecks",
     description:
@@ -270,7 +270,7 @@ export const tours = [
   },
   {
     id: "coron-tour-e-island-escapade",
-    address: "coron palawan",
+    address: "Coron, Palawan",
     type: "day tour",
     name: "Tour E - Island Escapade",
     description:
@@ -329,7 +329,7 @@ export const tours = [
   },
   {
     id: "coron-tour-f-busuanga-calauit",
-    address: "coron palawan",
+    address: "Coron, Palawan",
     type: "day tour",
     name: "Tour F - Busuanga Calauit",
     description:
@@ -393,7 +393,7 @@ export const tours = [
   },
   {
     id: "coron-town-tour",
-    address: "coron palawan",
+    address: "Coron, Palawan",
     type: "day tour",
     name: "Coron Town Tour",
     description:
