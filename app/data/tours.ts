@@ -5,7 +5,7 @@ export const tours = [
     type: "day tour",
     name: "Coron Island Tour A",
     description:
-      "Experience the best of Coron's natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
+      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
     duration: "1 day",
     itinerary: [
       {
@@ -274,7 +274,7 @@ export const tours = [
     type: "day tour",
     name: "Tour E - Island Escapade",
     description:
-      "Escape to paradise with this island-hopping adventure featuring pristine beaches, turquoise waters, and unforgettable views. Perfect for those looking to unwind and explore Coron's natural beauty.",
+      "Escape to paradise with this island-hopping adventure featuring pristine beaches, turquoise waters, and unforgettable views. Perfect for those looking to unwind and explore Corons natural beauty.",
     duration: "1 day",
     itinerary: [
       {
@@ -397,7 +397,7 @@ export const tours = [
     type: "day tour",
     name: "Coron Town Tour",
     description:
-      "Discover the charm of Coron Town with this half-day tour visiting iconic landmarks, local spots, and cultural highlights. Perfect for travelers looking to explore the town's rich heritage and stunning viewpoints.",
+      "Discover the charm of Coron Town with this half-day tour visiting iconic landmarks, local spots, and cultural highlights. Perfect for travelers looking to explore the towns rich heritage and stunning viewpoints.",
     duration: "Half Day",
     itinerary: [
       {
