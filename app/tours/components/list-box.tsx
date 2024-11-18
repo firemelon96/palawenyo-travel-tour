@@ -12,7 +12,7 @@ const ListBox = ({ type, items }: ListBoxType) => {
   const Icon = type === "Inclusion" ? BiCheckCircle : BiXCircle;
 
   return (
-    <div className="flex flex-col gap-2 bg-background p-4">
+    <div className="bg-sky-50 flex flex-col gap-2 p-4">
       <h5 className={`text-2xl ${include} ${exclude}`}>{type}</h5>
       <ul>
         {items.map((item) => (

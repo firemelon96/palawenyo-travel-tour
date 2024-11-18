@@ -1,6 +1,5 @@
 import { getDayTours } from "../lib/helpers";
 import { BigCard } from "./big-card";
-import Card from "./card";
 
 const Tours = () => {
   const dayTours = getDayTours();
@@ -19,7 +18,7 @@ const Tours = () => {
 
         <div className="w-full space-y-4">
           {dayTours.map((tour) => (
-            <BigCard data={tour} />
+            <BigCard key={tour.id} data={tour} />
           ))}
         </div>
       </div>
