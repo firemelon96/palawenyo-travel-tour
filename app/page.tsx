@@ -1,6 +1,5 @@
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
-import FeaturedTour from "./components/featured-tour";
 import Footer from "./components/footer";
 import Tours from "./components/tours";
 import OtherServices from "./components/other-services";

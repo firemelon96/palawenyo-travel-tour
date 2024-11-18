@@ -435,9 +435,9 @@ export const tours = [
     ],
     price: 700,
     images: [
+      "/resources/coron/town-tour/coron.avif",
       "/resources/coron/town-tour/cashew.avif",
       "/resources/coron/town-tour/church.avif",
-      "/resources/coron/town-tour/coron.avif",
       "/resources/coron/town-tour/lualhati.avif",
       "/resources/coron/town-tour/maquinit.avif",
       "/resources/coron/town-tour/souvenir.avif",

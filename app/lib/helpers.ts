@@ -15,11 +15,11 @@ export const formatPeso = (amount: number) => {
   return peso;
 };
 
-export const getFeaturedTours = () => {
-  const featuredTours = tours.filter((tour) => tour.type === "tour package");
+// export const getFeaturedTours = () => {
+//   const featuredTours = tours.filter((tour) => tour.type === "day tour");
 
-  return featuredTours;
-};
+//   return featuredTours;
+// };
 
 export const getDayTours = () => {
   const dayTours = tours.filter((tour) => tour.type === "day tour");

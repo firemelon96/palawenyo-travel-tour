@@ -1,39 +1,28 @@
 import Image from "next/image";
 import { formatPeso } from "../lib/helpers";
 import Link from "next/link";
+import { Tour } from "@/types";
 
-interface CardProps {
-  image: string;
-  title: string;
-  iti: string;
-  price?: number;
-  address: string;
-  id: string;
-}
+type Props = {
+  data: Tour;
+};
 
-const Card = ({ image, title, iti, price, address, id }: CardProps) => {
+const Card = ({ data }: Props) => {
   return (
-    <Link href={`/tours/${id}`}>
+    <Link href={`/tours/${data.id}`}>
       <div className="flex w-fit flex-col gap-2 rounded-2xl bg-secondary p-4 shadow-sm hover:shadow-md sm:shadow-none">
         <div className="h-48 w-60 overflow-hidden rounded-xl">
           <Image
-            src={image}
+            src={data.images[0]}
             width={300}
             height={300}
-            alt={title}
+            alt={data.name}
             className="h-full w-full object-cover"
           />
         </div>
         <div className="w-60">
-          <h2 className="truncate text-2xl font-semibold text-third">
-            {title}
-          </h2>
-          <p className="text-xl text-primary">
-            {iti} <span>{address}</span>
-          </p>
-          <span className="text-third/50">
-            {price ? `${formatPeso(price)} / pax` : "Upon Request"}
-          </span>
+          <h2 className="text-xl font-semibold text-third">{data.name}</h2>
+          <span className="text-third/50">{formatPeso(data.price)}</span>
         </div>
       </div>
     </Link>
