@@ -34,7 +34,7 @@ const SingleTour = async ({ params }: Props) => {
   const { id } = await params;
   const tour = getTourById(id);
 
-  const shareLink = `${process.env.NEXT_PUBLIC_BASE_URL}/tours/${id}`;
+  const shareLink = `${process.env.NEXT_PUBLIC_BASE_URL}/tours/${tour.id}`;
 
   return (
     <>
