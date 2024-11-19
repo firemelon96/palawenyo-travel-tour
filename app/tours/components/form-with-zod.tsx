@@ -1,13 +1,13 @@
 "use client";
 
-import z, { date } from "zod";
+import z from "zod";
 import { Controller, FieldValues, useForm } from "react-hook-form";
 import DatePicker from "react-datepicker";
 import { BiMinus, BiPlus } from "react-icons/bi";
 
 import "react-datepicker/dist/react-datepicker.css";
 import { useEffect, useState } from "react";
-import { addDays, addMonths, format } from "date-fns";
+import { format } from "date-fns";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { formatPeso } from "@/app/lib/helpers";
@@ -20,13 +20,21 @@ const schema = z.object({
   count: z.number().min(1, "Minimum of 1 person"),
 });
 
+type PrivatePrice = { min: number; max: number; price: number };
+
 interface FormWithZODProps {
   duration: string;
   price?: number;
   name: string;
+  privatePrice: PrivatePrice[];
 }
 
-const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
+const FormWithZOD = ({
+  name,
+  duration,
+  price,
+  privatePrice,
+}: FormWithZODProps) => {
   const durationNum = Number(duration.split(" ")[0]) - 1;
   const router = useRouter();
 
@@ -41,8 +49,8 @@ const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
     resolver: zodResolver(schema),
     defaultValues: {
       date: null,
-      count: 0,
-      travellerType: null,
+      count: 1,
+      travellerType: "Joiners",
       notes: "",
     },
   });
@@ -58,28 +66,31 @@ const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
 
   const count = watch("count");
   const travellerType = watch("travellerType");
-  // const dateRange = watch("dateRange");
 
-  // const [startDate, setStartDate] = useState<Date | null>(null);
-  // const [endDate, setEndDate] = useState<Date | null>(null);
-  const [tourPrice] = useState(price);
+  console.log(travellerType === "Private");
+
+  const [tourPrice, setTourPrice] = useState(0);
 
   const totalPrice = tourPrice
     ? formatPeso(tourPrice * count)
     : "To be discussed";
 
-  // useEffect(() => {
-  //   if (startDate) {
-  //     const newEndDate = addDays(new Date(startDate), durationNum) || null;
-  //     // newEndDate.setDate(newEndDate.getDate() + 3);
-  //     setEndDate(newEndDate);
-  //     // @ts-ignore
-  //     setValue("dateRange.endDate", newEndDate);
-  //   } else {
-  //     setEndDate(null);
-  //     setValue("dateRange.endDate", null);
-  //   }
-  // }, [startDate, setValue]);
+  useEffect(() => {
+    if (travellerType === "Joiners") {
+      setTourPrice(price || 0);
+    }
+
+    if (travellerType === "Private") {
+      const priceEntry =
+        privatePrice.find(
+          (entry) => count >= entry.min && count <= entry.max,
+        ) || privatePrice[privatePrice.length - 1];
+
+      console.log(priceEntry?.price);
+
+      setTourPrice(priceEntry?.price);
+    }
+  }, [travellerType, count, privatePrice]);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
@@ -92,7 +103,7 @@ const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
             selected={field.value}
             minDate={new Date()}
             placeholderText="Select a date for your trip"
-            className="border-gray-300 text-slate-500 mt-1 block w-full rounded-md border border-third p-2 text-xl shadow-sm"
+            className="border-gray-300 dark:bg-sky-400/10 text-slate-500 mt-1 block w-full rounded-md border border-third p-2 text-xl shadow-sm"
           />
         )}
       />
@@ -138,7 +149,7 @@ const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
               type="number"
               {...register("count")}
               readOnly
-              className="flex w-7 justify-center text-center"
+              className="dark:bg-sky-500/10 dark:text-slate-300 flex w-7 justify-center text-center"
             />
             <button
               type="button"
@@ -158,7 +169,7 @@ const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
         <textarea
           placeholder="e.g. type of food and drinks"
           rows={3}
-          className="h-20 w-full rounded-md border border-third p-2"
+          className="dark:bg-sky-400/10 h-20 w-full rounded-md border border-third p-2"
           {...register("notes")}
         />
         {errors.notes && (
@@ -167,18 +178,10 @@ const FormWithZOD = ({ name, duration, price }: FormWithZODProps) => {
       </label>
       {count ? (
         <div className="flex items-center justify-between bg-third/50 p-4 text-2xl font-semibold text-secondary">
-          {tourPrice ? (
+          {tourPrice > 0 && (
             <>
               <span>TOTAL</span> <p>{formatPeso(tourPrice * count)}</p>
             </>
-          ) : (
-            <ul className="list-inside list-disc text-sm">
-              <li className="">
-                Customized and private tour rate is available upon request
-              </li>
-              <li className="">Rates may changes without prior notice.</li>
-              <li className="">Booking is sent directly to messenger.</li>
-            </ul>
           )}
         </div>
       ) : (

@@ -42,6 +42,13 @@ export const tours = [
       },
     ],
     price: 1200,
+    privatePrice: [
+      { min: 1, max: 1, price: 5600 },
+      { min: 2, max: 3, price: 3300 },
+      { min: 4, max: 5, price: 2400 },
+      { min: 6, max: 8, price: 2100 },
+      { min: 9, max: 10, price: 1900 },
+    ],
     images: [
       "/resources/coron/tour-a/kayangan.avif",
       "/resources/coron/tour-a/cyc.avif",
@@ -107,6 +114,13 @@ export const tours = [
       },
     ],
     price: 1400,
+    privatePrice: [
+      { min: 1, max: 1, price: 5800 },
+      { min: 2, max: 3, price: 3500 },
+      { min: 4, max: 5, price: 2600 },
+      { min: 6, max: 8, price: 2200 },
+      { min: 9, max: 10, price: 2000 },
+    ],
     images: [
       "/resources/coron/tour-b/barracuda.avif",
       "/resources/coron/tour-b/island.avif",
@@ -176,6 +190,13 @@ export const tours = [
       },
     ],
     price: 1700,
+    privatePrice: [
+      { min: 1, max: 1, price: 6200 },
+      { min: 2, max: 3, price: 3950 },
+      { min: 4, max: 5, price: 2700 },
+      { min: 6, max: 8, price: 2300 },
+      { min: 9, max: 10, price: 2100 },
+    ],
     images: [
       "/resources/coron/tour-c/coral.avif",
       "/resources/coron/tour-c/cyc.avif",
@@ -242,6 +263,13 @@ export const tours = [
       },
     ],
     price: 1600,
+    privatePrice: [
+      { min: 1, max: 1, price: 6250 },
+      { min: 2, max: 3, price: 3950 },
+      { min: 4, max: 5, price: 2700 },
+      { min: 6, max: 8, price: 2300 },
+      { min: 9, max: 10, price: 2100 },
+    ],
     images: [
       "/resources/coron/tour-d/gunboat.avif",
       "/resources/coron/tour-d/lusong-coral.avif",
@@ -303,6 +331,13 @@ export const tours = [
       },
     ],
     price: 1600,
+    privatePrice: [
+      { min: 1, max: 1, price: 6250 },
+      { min: 2, max: 3, price: 3950 },
+      { min: 4, max: 5, price: 2700 },
+      { min: 6, max: 8, price: 2300 },
+      { min: 9, max: 10, price: 2100 },
+    ],
     images: [
       "/resources/coron/tour-e/banana.avif",
       "/resources/coron/tour-e/bulog.avif",
@@ -362,6 +397,13 @@ export const tours = [
       },
     ],
     price: 2600,
+    privatePrice: [
+      { min: 1, max: 1, price: 11700 },
+      { min: 2, max: 3, price: 7000 },
+      { min: 4, max: 5, price: 4300 },
+      { min: 6, max: 8, price: 3500 },
+      { min: 9, max: 10, price: 3200 },
+    ],
     images: [
       "/resources/coron/tour-f/calauit.avif",
       "/resources/coron/tour-f/black-cave.avif",
@@ -434,6 +476,13 @@ export const tours = [
       },
     ],
     price: 700,
+    privatePrice: [
+      { min: 1, max: 1, price: 3200 },
+      { min: 2, max: 3, price: 2000 },
+      { min: 4, max: 5, price: 1400 },
+      { min: 6, max: 8, price: 1300 },
+      { min: 9, max: 10, price: 1100 },
+    ],
     images: [
       "/resources/coron/town-tour/coron.avif",
       "/resources/coron/town-tour/cashew.avif",

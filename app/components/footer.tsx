@@ -7,6 +7,8 @@ import { tours } from "../data/tours";
 import Link from "next/link";
 
 const Footer = () => {
+  //add a link to my website in dd
+
   return (
     <footer className="bg-sky-500 dark:bg-sky-800 text-sky-50">
       <div className="container mx-auto grid grid-cols-1 gap-4 py-20 text-center md:grid-cols-3 md:px-20 md:text-start">
@@ -57,9 +59,21 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col items-center border-t border-secondary py-2 text-sm text-background">
-        <p> &copy; Copyright 2024. All Rights Reserved.</p>
-        <span>Palawenyo Travel and Tours</span>
+      <div className="text-slate-400 border-slate-500 flex flex-col items-center border-t py-2 text-sm">
+        <p className="">
+          &copy; Copyright 2024. All Rights Reserved. | Palawenyo Travel and
+          Tours
+        </p>
+
+        <span className="text-xs font-extralight">
+          Designed and developed by:{" "}
+          <Link
+            href="https://www.facebook.com/ejamion/"
+            className="text-sky-400 underline"
+          >
+            A. Jamion
+          </Link>
+        </span>
       </div>
     </footer>
   );

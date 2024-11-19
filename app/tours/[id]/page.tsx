@@ -64,6 +64,7 @@ const SingleTour = async ({ params }: Props) => {
               <p className="text-slate-500">{tour.address}</p>
 
               <FormWithZOD
+                privatePrice={tour.privatePrice}
                 name={tour.name}
                 price={tour.price}
                 duration={tour.duration}
