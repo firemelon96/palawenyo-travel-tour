@@ -66,13 +66,7 @@ const Footer = () => {
         </p>
 
         <span className="text-xs font-extralight">
-          Designed and developed by:{" "}
-          <Link
-            href="https://www.facebook.com/ejamion/"
-            className="text-sky-400 underline"
-          >
-            A. Jamion
-          </Link>
+          Designed and developed by: A. Jamion
         </span>
       </div>
     </footer>
