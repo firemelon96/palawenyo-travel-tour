@@ -56,7 +56,6 @@ const FormWithZOD = ({
   });
 
   const onSubmit = (data: FieldValues) => {
-    // console.log(data);
     const { date, count, travellerType, notes } = data;
 
     router.push(
@@ -66,8 +65,6 @@ const FormWithZOD = ({
 
   const count = watch("count");
   const travellerType = watch("travellerType");
-
-  console.log(travellerType === "Private");
 
   const [tourPrice, setTourPrice] = useState(0);
 
@@ -85,8 +82,6 @@ const FormWithZOD = ({
         privatePrice.find(
           (entry) => count >= entry.min && count <= entry.max,
         ) || privatePrice[privatePrice.length - 1];
-
-      console.log(priceEntry?.price);
 
       setTourPrice(priceEntry?.price);
     }
