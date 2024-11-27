@@ -28,7 +28,7 @@ const ReviewsMap = () => {
         Traveller&apos;s <span className="text-sky-500">Reviews</span>
       </h3>
       <div className="flex h-auto flex-col items-center md:flex-row">
-        <div className="flex w-full flex-row items-center justify-center md:w-1/3 md:flex-col">
+        <div className="flex w-full flex-row items-center justify-center overflow-x-auto md:w-1/3 md:flex-col">
           {reviews.map((review, index) => (
             <div
               key={review.name}

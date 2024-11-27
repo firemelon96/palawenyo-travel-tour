@@ -17,7 +17,7 @@ export default function Home() {
       {/* <FeaturedTour /> */}
       <ToursReused
         sectionId="packageTours"
-        label="Package tours in coron"
+        label="Package tours in Coron"
         tours={tourPackages}
       />
       <ToursReused
