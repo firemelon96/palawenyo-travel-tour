@@ -6,21 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.css";
 
-// const images = [
-//   "/resources/balabac/patawan-island.png",
-//   "/resources/balabac/patawan.png",
-//   "/resources/balabac/onok-island.png",
-//   "/resources/balabac/candaraman.png",
-//   "/resources/balabac/canimeran-island.png",
-//   "/resources/balabac/canimeranp.png",
-//   "/resources/balabac/patawan-island.png",
-//   "/resources/balabac/patawan.png",
-//   "/resources/balabac/onok-island.png",
-//   "/resources/balabac/candaraman.png",
-//   "/resources/balabac/canimeran-island.png",
-//   "/resources/balabac/canimeranp.png",
-// ];
-
 interface ImageProps {
   images: string[];
 }
@@ -35,7 +20,7 @@ const ImageSliderSlick = ({ images }: ImageProps) => {
             height={400}
             width={400}
             alt={`image-${i + 1}`}
-            className="h-20 w-20 cursor-pointer"
+            className="h-20 w-20 cursor-pointer overflow-x-auto"
           />
         </a>
       );

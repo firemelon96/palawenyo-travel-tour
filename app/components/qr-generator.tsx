@@ -3,7 +3,7 @@ import QRCode from "react-qr-code";
 type Props = {
   url: string;
   name: string;
-  price: number;
+  price?: number;
 };
 
 export const QrGenerator = ({ name, price, url }: Props) => {

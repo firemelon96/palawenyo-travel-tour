@@ -5,670 +5,7 @@ import { MdBathroom, MdBreakfastDining, MdTravelExplore } from "react-icons/md";
 import { TbAirConditioning } from "react-icons/tb";
 import { TiWiFi } from "react-icons/ti";
 
-export const tours = [
-  {
-    id: "coron-tour-a-island-tour-a",
-    address: "Coron, Palawan",
-    type: "day tour",
-    name: "Coron Island Tour A",
-    description:
-      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
-    duration: "1 day tour",
-    itineraries: [
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "07:30 AM",
-        activities: ["Pick up from hotel"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "08:30 AM",
-        activities: ["Visit Kayangan Lake"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "10:00 AM",
-        activities: ["Snorkel at Reef Garden"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "11:30 AM",
-        activities: ["Relax at White Sand Sunset Beach"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "12:30 PM",
-        activities: ["Lunch at the beach"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "01:30 PM",
-        activities: ["Explore Coral Garden"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "03:00 PM",
-        activities: ["Swim and unwind at CYC Beach"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "04:30 PM",
-        activities: ["Return to hotel"],
-      },
-    ],
-    price: 1200,
-    privatePrice: [
-      { min: 1, max: 1, price: 5600 },
-      { min: 2, max: 3, price: 3300 },
-      { min: 4, max: 5, price: 2400 },
-      { min: 6, max: 8, price: 2100 },
-      { min: 9, max: 10, price: 1900 },
-    ],
-    images: [
-      "/resources/coron/tour-a/kayangan.avif",
-      "/resources/coron/tour-a/cyc.avif",
-      "/resources/coron/tour-a/green.avif",
-      "/resources/coron/tour-a/island.avif",
-      "/resources/coron/tour-a/islas.avif",
-      "/resources/coron/tour-a/quin.avif",
-    ],
-    inclusions: [
-      "Hotel pick-up and drop-off",
-      "Lunch with refreshments",
-      "Entrance fees to all sites",
-      "Tour guide",
-    ],
-    exclusions: ["Environmental fee (PHP 200)", "Personal expenses"],
-    additionalInformation: {
-      whatToBring: [
-        "Sunscreen",
-        "Swimwear",
-        "Towel",
-        "Camera",
-        "Extra cash for fees and tips",
-      ],
-      notes: "Environmental fee of PHP 200 is payable upon arrival in Coron.",
-    },
-  },
-  {
-    id: "coron-island-tour-b",
-    address: "Coron, Palawan",
-    type: "day tour",
-    name: "Coron Island Tour B",
-    description:
-      "Discover hidden gems and pristine locations on Coron Island. This tour takes you to enchanting spots like Barracuda Lake, Skeleton Wreck, and Malwawey Reef, offering a perfect mix of adventure and relaxation.",
-    duration: "1 day tour",
-    itineraries: [
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "08:00 AM",
-        activities: ["Pick up from hotel"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "09:00 AM",
-        activities: ["Visit Barracuda Lake"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "10:30 AM",
-        activities: ["Snorkeling at Skeleton Wreck"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "12:00 PM",
-        activities: ["Lunch at Malwawey Reef"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "01:30 PM",
-        activities: ["Swim and relax at Banol Beach"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "03:00 PM",
-        activities: ["Explore Reef Garden"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "04:30 PM",
-        activities: ["Return to hotel"],
-      },
-    ],
-    price: 1400,
-    privatePrice: [
-      { min: 1, max: 1, price: 5800 },
-      { min: 2, max: 3, price: 3500 },
-      { min: 4, max: 5, price: 2600 },
-      { min: 6, max: 8, price: 2200 },
-      { min: 9, max: 10, price: 2000 },
-    ],
-    images: [
-      "/resources/coron/tour-b/barracuda.avif",
-      "/resources/coron/tour-b/island.avif",
-      "/resources/coron/tour-b/reef.avif",
-      "/resources/coron/tour-b/skeleton.avif",
-      "/resources/coron/tour-b/twin.avif",
-    ],
-    inclusions: [
-      "Hotel pick-up and drop-off",
-      "Lunch with refreshments",
-      "Entrance fees to all sites",
-      "Snorkeling gear",
-      "Tour guide",
-    ],
-    exclusions: ["Environmental fee (PHP 200)", "Personal expenses"],
-    additionalInformation: {
-      whatToBring: [
-        "Sunscreen",
-        "Swimwear",
-        "Towel",
-        "Camera",
-        "Extra cash for fees and tips",
-      ],
-      notes: "Environmental fee of PHP 200 is payable upon arrival in Coron.",
-    },
-  },
-  {
-    id: "coron-ultimate-tour",
-    address: "Coron, Palawan",
-    type: "day tour",
-    name: "Coron Tour C - Coron Ultimate Tour",
-    description:
-      "Experience the ultimate adventure in Coron with this comprehensive tour. Visit top destinations like Kayangan Lake, Twin Lagoons, Malcapuya Island, and more. Perfect for travelers seeking a full day of exploration and unforgettable memories.",
-    duration: "1 day tour",
-    itineraries: [
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "07:30 AM",
-        activities: ["Pick up from hotel"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "08:30 AM",
-        activities: ["Visit Kayangan Lake"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "10:00 AM",
-        activities: ["Swim and kayak at Twin Lagoons"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "11:30 AM",
-        activities: ["Snorkeling at Coral Garden"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "12:30 PM",
-        activities: ["Lunch at a beach location"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "02:00 PM",
-        activities: ["Relax at Malcapuya Island"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "03:30 PM",
-        activities: ["Visit Bulog Dos Sandbar"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "05:00 PM",
-        activities: ["Return to hotel"],
-      },
-    ],
-    price: 1700,
-    privatePrice: [
-      { min: 1, max: 1, price: 6200 },
-      { min: 2, max: 3, price: 3950 },
-      { min: 4, max: 5, price: 2700 },
-      { min: 6, max: 8, price: 2300 },
-      { min: 9, max: 10, price: 2100 },
-    ],
-    images: [
-      "/resources/coron/tour-c/coral.avif",
-      "/resources/coron/tour-c/cyc.avif",
-      "/resources/coron/tour-c/kayangan.avif",
-      "/resources/coron/tour-c/reef.avif",
-      "/resources/coron/tour-c/skeleton.avif",
-      "/resources/coron/tour-c/twin.avif",
-    ],
-    inclusions: [
-      "Hotel pick-up and drop-off",
-      "Lunch with refreshments",
-      "Entrance fees to all sites",
-      "Snorkeling gear",
-      "Tour guide",
-    ],
-    exclusions: ["Environmental fee (PHP 200)", "Personal expenses"],
-    additionalInformation: {
-      whatToBring: [
-        "Sunscreen",
-        "Swimwear",
-        "Towel",
-        "Camera",
-        "Extra cash for fees and tips",
-      ],
-      notes: "Environmental fee of PHP 200 is payable upon arrival in Coron.",
-    },
-  },
-  {
-    id: "coron-tour-d-reefs-and-wrecks",
-    address: "Coron, Palawan",
-    type: "day tour",
-    name: "Coron Tour D - Reefs and Wrecks",
-    description:
-      "Dive into history and marine life with this unique tour featuring snorkeling at shipwrecks and exploring vibrant coral reefs. Perfect for underwater enthusiasts and history buffs.",
-    duration: "1 day tour",
-    itineraries: [
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "08:00 AM",
-        activities: ["Pick up from hotel"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "09:00 AM",
-        activities: ["Snorkeling at Lusong Gunboat"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "10:30 AM",
-        activities: ["Explore Coral Garden"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "12:00 PM",
-        activities: ["Visit East Tangat Wreck"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "01:00 PM",
-        activities: ["Lunch and leisure at Pass Island"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "03:00 PM",
-        activities: ["Relax and swim at Pass Island"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "04:30 PM",
-        activities: ["Return to hotel"],
-      },
-    ],
-    price: 1600,
-    privatePrice: [
-      { min: 1, max: 1, price: 6250 },
-      { min: 2, max: 3, price: 3950 },
-      { min: 4, max: 5, price: 2700 },
-      { min: 6, max: 8, price: 2300 },
-      { min: 9, max: 10, price: 2100 },
-    ],
-    images: [
-      "/resources/coron/tour-d/gunboat.avif",
-      "/resources/coron/tour-d/lusong-coral.avif",
-      "/resources/coron/tour-d/pass-island.avif",
-      "/resources/coron/tour-d/pass.avif",
-      "/resources/coron/tour-d/tangat.avif",
-    ],
-    inclusions: [
-      "Hotel pick-up and drop-off",
-      "Lunch with refreshments",
-      "Entrance fees to all sites",
-      "Snorkeling gear",
-      "Tour guide",
-    ],
-    exclusions: ["Environmental fee (PHP 200)", "Personal expenses"],
-    additionalInformation: {
-      whatToBring: [
-        "Sunscreen",
-        "Swimwear",
-        "Towel",
-        "Underwater camera",
-        "Extra cash for fees and tips",
-      ],
-      notes: "Environmental fee of PHP 200 is payable upon arrival in Coron.",
-    },
-  },
-  {
-    id: "coron-tour-e-island-escapade",
-    address: "Coron, Palawan",
-    type: "day tour",
-    name: "Tour E - Island Escapade",
-    description:
-      "Escape to paradise with this island-hopping adventure featuring pristine beaches, turquoise waters, and unforgettable views. Perfect for those looking to unwind and explore Corons natural beauty.",
-    duration: "1 day tour",
-    itineraries: [
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "07:30 AM",
-        activities: ["Pick up from hotel"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "08:30 AM",
-        activities: ["Relax at Malcapuya Beach"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "10:30 AM",
-        activities: ["Swim and enjoy lunch at Banana Island"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "01:30 PM",
-        activities: ["Explore Bulog Dos Island"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "03:30 PM",
-        activities: ["Leisure time and photos at the sandbar"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "05:00 PM",
-        activities: ["Return to hotel"],
-      },
-    ],
-    price: 1600,
-    privatePrice: [
-      { min: 1, max: 1, price: 6250 },
-      { min: 2, max: 3, price: 3950 },
-      { min: 4, max: 5, price: 2700 },
-      { min: 6, max: 8, price: 2300 },
-      { min: 9, max: 10, price: 2100 },
-    ],
-    images: [
-      "/resources/coron/tour-e/banana.avif",
-      "/resources/coron/tour-e/bulog.avif",
-      "/resources/coron/tour-e/malcapuya-island.avif",
-      "/resources/coron/tour-e/malcapuya.avif",
-    ],
-    inclusions: [
-      "Hotel pick-up and drop-off",
-      "Lunch with refreshments",
-      "Entrance fees to all sites",
-      "Tour guide",
-    ],
-    exclusions: ["Environmental fee (PHP 200)", "Personal expenses"],
-    additionalInformation: {
-      whatToBring: [
-        "Sunscreen",
-        "Swimwear",
-        "Towel",
-        "Camera",
-        "Extra cash for fees and tips",
-      ],
-      notes: "Environmental fee of PHP 200 is payable upon arrival in Coron.",
-    },
-  },
-  {
-    id: "coron-tour-f-busuanga-calauit",
-    address: "Coron, Palawan",
-    type: "day tour",
-    name: "Tour F - Busuanga Calauit",
-    description:
-      "Embark on a wildlife and nature adventure to Calauit Safari Park and Busuangas pristine attractions. Ideal for travelers who love exploring diverse ecosystems and serene landscapes.",
-    duration: "1 day tour",
-    itineraries: [
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "04:00 AM",
-        activities: ["Pick up from hotel"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "06:30 AM",
-        activities: ["Visit Calauit Sanctuary"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "10:00 AM",
-        activities: ["Explore Malbato Church"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "12:00 PM",
-        activities: ["Lunch at a local restaurant"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "02:00 PM",
-        activities: ["Relax and swim at Black Island"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "04:30 PM",
-        activities: ["Return to hotel"],
-      },
-    ],
-    price: 2600,
-    privatePrice: [
-      { min: 1, max: 1, price: 11700 },
-      { min: 2, max: 3, price: 7000 },
-      { min: 4, max: 5, price: 4300 },
-      { min: 6, max: 8, price: 3500 },
-      { min: 9, max: 10, price: 3200 },
-    ],
-    images: [
-      "/resources/coron/tour-f/calauit.avif",
-      "/resources/coron/tour-f/black-cave.avif",
-      "/resources/coron/tour-f/black-island.avif",
-      "/resources/coron/tour-f/busuanga-town.avif",
-      "/resources/coron/tour-f/busuanga.avif",
-      "/resources/coron/tour-f/cave.avif",
-      "/resources/coron/tour-f/floating.avif",
-    ],
-    inclusions: [
-      "Hotel pick-up and drop-off",
-      "Safari entrance fees",
-      "Lunch with refreshments",
-      "Tour guide",
-    ],
-    exclusions: ["Personal expenses", "Tips for guides and drivers"],
-    additionalInformation: {
-      whatToBring: [
-        "Sunscreen",
-        "Comfortable walking shoes",
-        "Hat and sunglasses",
-        "Swimwear and towel",
-        "Camera",
-        "Extra cash for souvenirs and tips",
-      ],
-      notes:
-        "This tour involves an early pick-up time. Make sure to have a light breakfast or snacks before departure.",
-    },
-  },
-  {
-    id: "coron-town-tour",
-    address: "Coron, Palawan",
-    type: "day tour",
-    name: "Coron Town Tour",
-    description:
-      "Discover the charm of Coron Town with this half-day tour visiting iconic landmarks, local spots, and cultural highlights. Perfect for travelers looking to explore the towns rich heritage and stunning viewpoints.",
-    duration: "Half Day",
-    itineraries: [
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "03:00 PM",
-        activities: ["Hike to Mt. Tapyas for a panoramic view"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "04:30 PM",
-        activities: ["Visit St. Augustine Church"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "05:00 PM",
-        activities: ["Relax at Lualhati Park"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "05:30 PM",
-        activities: ["Stop by Cashew House for local delicacies"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "06:00 PM",
-        activities: ["Shop at the Souvenir Shop"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "06:30 PM",
-        activities: ["Walk around Coron Town Plaza"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "07:00 PM",
-        activities: ["Soak and unwind at Maquinit Hot Spring"],
-      },
-      {
-        title: "",
-        pickupTime: "",
-        destinations: [],
-        duration: "08:30 PM",
-        activities: ["Return to hotel"],
-      },
-    ],
-    price: 700,
-    privatePrice: [
-      { min: 1, max: 1, price: 3200 },
-      { min: 2, max: 3, price: 2000 },
-      { min: 4, max: 5, price: 1400 },
-      { min: 6, max: 8, price: 1300 },
-      { min: 9, max: 10, price: 1100 },
-    ],
-    images: [
-      "/resources/coron/town-tour/coron.avif",
-      "/resources/coron/town-tour/cashew.avif",
-      "/resources/coron/town-tour/church.avif",
-      "/resources/coron/town-tour/lualhati.avif",
-      "/resources/coron/town-tour/maquinit.avif",
-      "/resources/coron/town-tour/souvenir.avif",
-    ],
-    inclusions: [
-      "Hotel pick-up and drop-off",
-      "Entrance fees to all sites",
-      "Tour guide",
-    ],
-    exclusions: ["Personal expenses", "Snacks or meals"],
-    additionalInformation: {
-      whatToBring: [
-        "Comfortable footwear",
-        "Camera",
-        "Water bottle",
-        "Extra clothes for Maquinit Hot Spring",
-        "Cash for souvenirs and snacks",
-      ],
-      notes:
-        "This tour is ideal for an afternoon exploration, concluding with a relaxing soak at Maquinit Hot Spring.",
-    },
-  },
-
-  // packages
-
+export const packages = [
   {
     id: "4d-3n-coron-tour-package",
     address: "Coron, Palawan",
@@ -676,8 +13,8 @@ export const tours = [
     type: "tour package",
     name: "4D/3N CORON TOUR PACKAGE",
     description:
-      "Experience the best of Coron, Palawan, with our 4-Day Tour Package, perfectly crafted for travelers seeking a mix of adventure, relaxation, and cultural immersion. From crystal-clear lagoons to vibrant coral reefs and scenic town highlights, this package covers all the must-see destinations in Coron.",
-    itineraries: [
+      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
+    itinerary: [
       {
         title: "DAY 1: SERVICE FROM BUSUANGA AIRPORT TO HOTEL CORON TOWN TOUR",
         duration: "(4PM-8PM)",
@@ -785,18 +122,11 @@ export const tours = [
       },
     ],
     images: [
-      // 'tapyas',
-      // maquinit hotspring
-      "/resources/coron/tour-a/cyc.avif",
-      "/resources/coron/tour-a/islas.avif",
       "/resources/coron/tour-a/kayangan.avif",
-
-      // baracuda
-      // smith beach
-      // skeleton wreck
-
+      "/resources/coron/tour-a/cyc.avif",
       "/resources/coron/tour-a/green.avif",
       "/resources/coron/tour-a/island.avif",
+      "/resources/coron/tour-a/islas.avif",
       "/resources/coron/tour-a/quin.avif",
     ],
     inclusions: [
@@ -820,7 +150,7 @@ export const tours = [
     type: "tour package",
     name: "4D/3N CORON HIGHLIGHTS",
     description:
-      "Embark on an unforgettable journey through the best that Coron has to offer with our Coron Highlights 4 Days and 3 Nights Package. This carefully curated itinerary combines stunning natural wonders, serene beaches, and cultural treasures, ensuring a well-rounded experience of this tropical paradise.",
+      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
     hotelPrice: [
       {
         hotelName: "Cebuanas Inn",
@@ -835,7 +165,7 @@ export const tours = [
         price: 7500,
       },
     ],
-    itineraries: [
+    itinerary: [
       {
         title: "DAY 1: CORON TOWN TOUR w/ HOT-SPRING",
         duration: "(4PM-8PM)",
@@ -964,7 +294,7 @@ export const tours = [
     type: "tour package",
     name: "4D/3N CORON TOUR + ACCOMODATION PACKAGE ",
     description:
-      "Experience the ultimate tropical getaway with our Coron 4 Days and 3 Nights Highlights Package, complete with comfortable accommodations to ensure a stress-free vacation. Discover Coron's stunning natural attractions, pristine beaches, and vibrant culture while enjoying a relaxing stay at a handpicked hotel or resort.",
+      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
     hotelPrice: [
       {
         hotelName: "Cebuanas Travelers Inn (Plated Breakfast)",
@@ -1015,7 +345,7 @@ export const tours = [
         label: "Round-trip Airport van Transfer (Busuanga Airport)",
       },
     ],
-    itineraries: [
+    itinerary: [
       {
         title: "DAY 1: SERVICE FROM BUSUANGA AIRPORT TO HOTEL CORON TOWN TOUR",
         duration: "(4PM-8PM)",
@@ -1111,7 +441,7 @@ export const tours = [
     type: "tour package",
     name: "4D/3N CORON HIGHLIGHTS + ACCOMODATION",
     description:
-      "Immerse yourself in the breathtaking beauty of Coron with our 4 Days and 3 Nights Highlights Package, complete with accommodations. Explore stunning lagoons, white sandy beaches, and rich marine life, all while staying in a relaxing hotel or resort for a hassle-free tropical getaway.",
+      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
     hotelPrice: [
       {
         hotelName: "Cebuanas Travelers Inn (Plated Breakfast)",
@@ -1158,7 +488,7 @@ export const tours = [
         label: "Round-trip Airport van Transfer (Busuanga Airport)",
       },
     ],
-    itineraries: [
+    itinerary: [
       {
         title: "DAY 1: CORON TOWN TOUR w/ HOT-SPRING",
         duration: "(4PM-8PM)",
@@ -1256,7 +586,7 @@ export const tours = [
     type: "tour package",
     name: "4D/3N CORON ISLAND + CALAUIT SAFARI TOUR PACKAGE",
     description:
-      "Explore the best of Coron's natural wonders and unique wildlife with our 4 Days and 3 Nights Coron Island + Calauit Safari Tour Package. This adventure-packed itinerary takes you from pristine beaches and lagoons to a one-of-a-kind wildlife experience, ensuring a memorable tropical getaway.",
+      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
     hotelPrice: [
       {
         hotelName: "Cebuanas Travelers Inn (Plated Breakfast)",
@@ -1303,7 +633,7 @@ export const tours = [
         label: "Round-trip Airport van Transfer (Busuanga Airport)",
       },
     ],
-    itineraries: [
+    itinerary: [
       {
         title: "DAY 1: CORON TOWN TOUR w/ HOT-SPRING",
         duration: "(4PM-8PM)",
@@ -1403,13 +733,13 @@ export const tours = [
     ],
   },
   {
-    id: "5d-4n-coron-tour-package-hotel",
+    id: "4d-3n-coron-tour-package-hotel",
     address: "Coron, Palawan",
-    duration: "5 days 4 nights",
+    duration: "4 days 3 nights",
     type: "tour package",
     name: "5D/4N CORON TOUR PACKAGE + HOTEL",
     description:
-      "Immerse yourself in the tropical paradise of Coron with our 5 Days and 4 Nights Tour Package, complete with a comfortable hotel stay. This comprehensive package lets you explore Coron's pristine islands, vibrant marine life, and stunning natural landmarks while enjoying a relaxing accommodation.",
+      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
     hotelPrice: [
       {
         hotelName: "Cebuanas Inn (Plated Breakfast)",
@@ -1488,7 +818,7 @@ export const tours = [
         label: "Round-trip Airport van Transfer (Busuanga Airport)",
       },
     ],
-    itineraries: [
+    itinerary: [
       {
         title: "DAY 1: CORON TOWN TOUR w/ HOT-SPRING",
         duration: "(4PM-8PM)",
@@ -1605,7 +935,7 @@ export const tours = [
     type: "tour package",
     name: "5D/4N CORON ISLAND + Calauit Safari Tour",
     description:
-      "Discover the best of Coron with our 5 Days and 4 Nights Coron Island + Calauit Safari Tour Package. This all-inclusive adventure combines breathtaking island hopping, pristine beaches, vibrant marine life, and a unique wildlife safari experience at Calauit Safari Park.",
+      "Experience the best of Corons natural beauty with this island-hopping tour featuring crystal-clear lakes, vibrant coral reefs, and pristine beaches. Ideal for those seeking adventure and relaxation.",
     hotelPrice: [
       {
         hotelName: "King Michael Homestay / Cebuanas Travelers Inn",
@@ -1641,7 +971,7 @@ export const tours = [
           "Coron Island tours with Lunch (Tour A, Tour B, going to Black Island)",
       },
     ],
-    itineraries: [
+    itinerary: [
       {
         title: "DAY 1: CORON TOWN TOUR",
         duration: "(4PM-8PM)",

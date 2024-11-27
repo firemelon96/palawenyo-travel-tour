@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { tours } from "../data/tours";
+import { packages } from "../data/packages";
 
 interface TourLocationProps {
   address: string;
@@ -25,6 +26,18 @@ export const getDayTours = () => {
   const dayTours = tours.filter((tour) => tour.type === "day tour");
 
   return dayTours;
+};
+
+export const getPackageTours = () => {
+  const tourPackage = tours.filter((tour) => tour.type === "tour package");
+
+  return tourPackage;
+};
+
+export const getPaxTours = () => {
+  const paxTour = packages.filter((tour) => tour.type === "tour package");
+
+  return paxTour;
 };
 
 export const getTourById = (id: string) => {
