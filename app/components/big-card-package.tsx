@@ -1,7 +1,7 @@
 import { Tour } from "@/types";
 import Image from "next/image";
 import { QrGenerator } from "./qr-generator";
-import { formatPeso } from "../lib/helpers";
+import { formatPeso, truncateText } from "../lib/helpers";
 import Link from "next/link";
 
 type Props = {
@@ -24,12 +24,14 @@ export const BigCardPackage = ({ data }: Props) => {
         />
       </div>
       <div className="flex w-1/2 flex-col justify-between gap-1">
-        <h1 className="text-xl text-sky-600 md:text-3xl">{data.name}</h1>
-        <p className="text-lg text-sky-400 md:text-2xl">
+        <h1 className="text-4xl text-sky-600 md:text-3xl">
+          {truncateText(data.name, 25)}
+        </h1>
+        <p className="text-3xl text-sky-400 md:text-2xl">
           <span className="text-slate-500">{data.duration}</span>
         </p>
         <span className="hidden text-slate-500 md:block">
-          {data.description}
+          {truncateText(data.description, 250)}
         </span>
 
         <div className="flex items-center justify-center gap-2 md:justify-start">

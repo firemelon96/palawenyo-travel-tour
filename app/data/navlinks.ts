@@ -10,6 +10,11 @@ export const navLinks = [
     href: "#tours",
   },
   {
+    label: "Package tours",
+    link: "/package-tours",
+    href: "#packageTours",
+  },
+  {
     label: "Testimonials",
     link: "/testimonials",
     href: "#testimonial",

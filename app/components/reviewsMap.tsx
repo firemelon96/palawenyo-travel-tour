@@ -24,10 +24,10 @@ const ReviewsMap = () => {
       className="container mx-auto h-fit py-20 md:px-20"
       id="testimonial"
     >
-      <h3 className="text-slate-500 mb-10 text-center text-2xl md:text-start">
+      <h3 className="mb-10 text-center text-2xl text-slate-500 md:text-start">
         Traveller&apos;s <span className="text-sky-500">Reviews</span>
       </h3>
-      <div className="flex h-96 flex-col items-center md:flex-row">
+      <div className="flex h-auto flex-col items-center md:flex-row">
         <div className="flex w-full flex-row items-center justify-center md:w-1/3 md:flex-col">
           {reviews.map((review, index) => (
             <div
@@ -46,17 +46,17 @@ const ReviewsMap = () => {
                 <Image src={review.image} fill alt="avatar" />
               </div>
               <div className="hidden flex-col p-2 md:flex">
-                <span className="text-slate-600 dark:text-slate-300 text-xl">
+                <span className="text-xl text-slate-600 dark:text-slate-300">
                   {review.name}
                 </span>
-                <p className="text-slate-500 text-base">{review.title}</p>
+                <p className="text-base text-slate-500">{review.title}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="dark:bg-sky-500/10 bg-sky-50 h-96 w-full items-center rounded-xl text-center md:w-2/3 md:text-start">
+        <div className="h-auto w-full items-center rounded-xl bg-sky-50 text-center md:w-2/3 md:text-start dark:bg-sky-500/10">
           <div className="flex flex-col gap-3 p-4">
-            <p className="text-xl font-medium text-third">
+            <p className="text-third text-xl font-medium">
               {selectMessage?.heading}
             </p>
             <div className="flex justify-center gap-2 md:justify-start">

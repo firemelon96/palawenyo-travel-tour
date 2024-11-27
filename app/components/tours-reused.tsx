@@ -6,13 +6,14 @@ import { BigCardPackage } from "./big-card-package";
 type Props = {
   label: string;
   tours: Tour[];
+  sectionId: string;
 };
 
-const ToursReused = ({ label, tours }: Props) => {
+const ToursReused = ({ label, tours, sectionId }: Props) => {
   return (
     <section
       className="container mx-auto mt-10 scroll-mt-6 pb-16 text-center md:px-20 md:text-start"
-      id="tours"
+      id={sectionId}
     >
       <div className="flex flex-col items-center gap-4 md:items-start">
         <div>

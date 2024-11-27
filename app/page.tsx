@@ -15,8 +15,16 @@ export default function Home() {
       <Navbar />
       <Hero />
       {/* <FeaturedTour /> */}
-      <ToursReused label="Package tours in coron" tours={tourPackages} />
-      <ToursReused label="Explore Coron Day Tours" tours={dayTours} />
+      <ToursReused
+        sectionId="packageTours"
+        label="Package tours in coron"
+        tours={tourPackages}
+      />
+      <ToursReused
+        sectionId="tours"
+        label="Explore Coron Day Tours"
+        tours={dayTours}
+      />
       {/* <OtherServices /> */}
       <ReviewsMap />
       {/* <TripByLocation /> */}
