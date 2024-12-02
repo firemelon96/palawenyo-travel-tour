@@ -1,5 +1,13 @@
 export const reviews = [
   {
+    name: "Ezekiel Timola Cariño",
+    title: "Traveller",
+    starRating: 5,
+    heading: "Recommends Palawenyo Travel and Tours",
+    message: "🥰🥰🥰 LEGIT! highly recommended",
+    image: "/resources/profile/ezekiel.png",
+  },
+  {
     name: "Chaya Macasero",
     title: "Traveller",
     starRating: 5,
@@ -43,5 +51,23 @@ export const reviews = [
     message:
       "Highly recommended! Superb experience, me and my husband was extremely satisfied from palawenyo travel and tours. It has proven to be very courteous and helpful from the very beginning, trying to organize at the best our trip to Coron palawan.The guides and drivers are very professional and friendly, the accomodations simply superb. I highly recommend it, the team will turn your trip into an unforgettable experience!",
     image: "/resources/profile/jhen.png",
+  },
+  {
+    name: "Elsa Mansibang Knapen",
+    title: "Traveller",
+    starRating: 5,
+    heading: "Recommends Palawenyo Travel and Tours ",
+    message:
+      "Super 100%legit Very trusted travel and tours! Thank you Palawenyo sa napaka gandang service!",
+    image: "/resources/profile/elsa.png",
+  },
+  {
+    name: "Rob Mendez",
+    title: "Traveller",
+    starRating: 5,
+    heading: "Recommends Palawenyo Travel and Tours ",
+    message:
+      "Thank you for the 5 star service! Delicious food and very accommodating owner and staff. Tour guide was very entertaining and funny! Highly recommended 🖐 💯",
+    image: "/resources/profile/rod.png",
   },
 ];
