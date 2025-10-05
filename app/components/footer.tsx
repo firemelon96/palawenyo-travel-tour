@@ -10,7 +10,7 @@ const Footer = () => {
   //add a link to my website in dd
 
   return (
-    <footer className="bg-sky-500 dark:bg-sky-800 text-sky-50">
+    <footer className="bg-sky-500 text-sky-50 dark:bg-sky-800">
       <div className="container mx-auto grid grid-cols-1 gap-4 py-20 text-center md:grid-cols-3 md:px-20 md:text-start">
         <div className="flex flex-col items-center gap-4 md:items-start">
           <div className="">
@@ -35,7 +35,7 @@ const Footer = () => {
           </span>
           <ul className="flex flex-col items-center gap-4 text-base md:items-start">
             <li className="flex items-center space-x-2">
-              <BsWhatsapp /> <span>0998-957-3011</span>
+              <BsWhatsapp /> <span>0956-003-6711</span>
             </li>
 
             <li className="flex items-center space-x-2">
@@ -47,7 +47,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-4 md:items-end">
-          <span className="text-3xl font-semibold uppercase text-secondary">
+          <span className="text-secondary text-3xl font-semibold uppercase">
             Useful links
           </span>
           <ul className="flex flex-col gap-2 text-base md:text-end">
@@ -59,7 +59,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="text-slate-400 border-slate-500 flex flex-col items-center border-t py-2 text-sm">
+      <div className="flex flex-col items-center border-t border-slate-500 py-2 text-sm text-slate-400">
         <p className="">
           &copy; Copyright 2024. All Rights Reserved. | Palawenyo Travel and
           Tours
